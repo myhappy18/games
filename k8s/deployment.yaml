@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "moviesjoy.to"
         - name: Vless_UUID
-          value: "UUID"
+          value: "84125466-efb7-4cc4-9bb1-fa05d21a469a"
         - name: Vless_Path
           value: "/s236"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "84125466-efb7-4cc4-9bb1-fa05d21a469a"
         - name: Vmess_Path
           value: "/s248"
         - name: Share_Path
