@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: busy
+  name: says
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: busy
+      app: says
   template:
     metadata:
       labels:
-        app: busy
+        app: says
     spec:
       containers:
-      - image: okteto.dev/busy:latest
-        name: busy
+      - image: okteto.dev/says:latest
+        name: says
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "moviesjoy.to"
+          value: "vumoo.to"
         - name: Vless_UUID
-          value: "84125466-efb7-4cc4-9bb1-fa05d21a469a"
+          value: "51bfb719-debc-49ae-9f4d-2e333a34fa84"
         - name: Vless_Path
           value: "/s236"
         - name: Vmess_UUID
-          value: "84125466-efb7-4cc4-9bb1-fa05d21a469a"
+          value: "51bfb719-debc-49ae-9f4d-2e333a34fa84"
         - name: Vmess_Path
           value: "/s248"
         - name: Share_Path
